@@ -1,0 +1,2957 @@
+Index: .idea/d-chat.iml
+===================================================================
+--- .idea/d-chat.iml	(date 1559171228000)
++++ .idea/Dagchat.iml	(date 1561788226000)
+@@ -1,0 +1,0 @@
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+--- .idea/inspectionProfiles/profiles_settings.xml	(date 1559171228000)
++++ .idea/inspectionProfiles/profiles_settings.xml	(date 1559171228000)
+@@ -1,5 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="PROJECT_PROFILE" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(date 1559171228000)
++++ .idea/modules.xml	(date 1561788226000)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/d-chat.iml" filepath="$PROJECT_DIR$/.idea/d-chat.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/Dagchat.iml" filepath="$PROJECT_DIR$/.idea/Dagchat.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1559171228000)
++++ .idea/workspace.xml	(date 1561788226000)
+@@ -1,18 +1,714 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="NodePackageJsonFileManager">
+-    <packageJsonPaths />
++  <component name="ChangeListManager">
++    <list default="true" id="7a3127b9-6226-4f3c-a194-9d98ab5c52b3" name="Default" comment="">
++      <change afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Chats.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/CreateDialog.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Developers.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Dialog.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Error.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/FooterNavigation.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/Rules.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/components/objects/Chat.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/d-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dagchat.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
++    </list>
++    <ignored path="$PROJECT_DIR$/.tmp/" />
++    <ignored path="$PROJECT_DIR$/temp/" />
++    <ignored path="$PROJECT_DIR$/tmp/" />
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileEditorManager">
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/App.css">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="4020">
++              <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/src/components/Dialog.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="570">
++              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
++              <folding>
++                <element signature="e#0#41#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/Register.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="75">
++              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
++              <folding>
++                <element signature="e#0#41#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/Home.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="375">
++              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
++              <folding>
++                <element signature="e#0#41#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/objects/Message.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="180">
++              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/objects/Chat.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="75">
++              <caret line="6" column="41" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="41" />
++              <folding>
++                <element signature="e#0#26#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/Chats.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="585">
++              <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
++              <folding>
++                <element signature="e#72#106#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/components/CreateDialog.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="870">
++              <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
++              <folding>
++                <element signature="e#0#39#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/App.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="330">
++              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
++              <folding>
++                <element signature="e#0#41#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++    </leaf>
+   </component>
+-  <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="x" value="5" />
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="CSS File" />
++        <option value="JavaScript File" />
++      </list>
++    </option>
++  </component>
++  <component name="FindInProjectRecents">
++    <findStrings>
++      <find>center</find>
++      <find>dialog</find>
++      <find>inden</find>
++      <find>dialo</find>
++      <find>send-</find>
++      <find>text</find>
++      <find>message</find>
++      <find>link</find>
++      <find>create-block</find>
++      <find>input</find>
++      <find>button</find>
++      <find>cre</find>
++      <find>child</find>
++      <find>chats</find>
++      <find>status</find>
++      <find>heckbox-block</find>
++      <find>open-</find>
++      <find>crea</find>
++      <find>.input-error</find>
++      <find>inp</find>
++      <find>.open-block</find>
++      <find>chat</find>
++      <find>.input</find>
++    </findStrings>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="IdeDocumentHistory">
++    <option name="CHANGED_PATHS">
++      <list>
++        <option value="$PROJECT_DIR$/public/index.html" />
++        <option value="$PROJECT_DIR$/src/header/Header.js" />
++        <option value="$PROJECT_DIR$/src/footer/Footer.js" />
++        <option value="$PROJECT_DIR$/src/root/Root.js" />
++        <option value="$PROJECT_DIR$/src/wrapper/Wrapper.js" />
++        <option value="$PROJECT_DIR$/src/components/Dialog.jsx.js" />
++        <option value="$PROJECT_DIR$/src/index.jsx" />
++        <option value="$PROJECT_DIR$/src/components/home.js" />
++        <option value="$PROJECT_DIR$/src/components/Dialog.jsx" />
++        <option value="$PROJECT_DIR$/src/components/Home.jsx" />
++        <option value="$PROJECT_DIR$/src/components/Navigation.jsx" />
++        <option value="$PROJECT_DIR$/src/App.jsx" />
++        <option value="$PROJECT_DIR$/src/index.js" />
++        <option value="$PROJECT_DIR$/src/components/Eroor.js" />
++        <option value="$PROJECT_DIR$/package-lock.json" />
++        <option value="$PROJECT_DIR$/README.md" />
++        <option value="$PROJECT_DIR$/src/components/template/Header.css" />
++        <option value="$PROJECT_DIR$/src/components/template/Header.js" />
++        <option value="$PROJECT_DIR$/src/components/Header.js" />
++        <option value="$PROJECT_DIR$/src/components/Content.js" />
++        <option value="$PROJECT_DIR$/src/components/Error.js" />
++        <option value="$PROJECT_DIR$/src/components/FooterNavigation.js" />
++        <option value="$PROJECT_DIR$/src/components/Developers.js" />
++        <option value="$PROJECT_DIR$/src/components/Rules.js" />
++        <option value="$PROJECT_DIR$/src/components/About.js" />
++        <option value="$PROJECT_DIR$/package.json" />
++        <option value="$PROJECT_DIR$/src/components/forms/RegisterForm.js" />
++        <option value="$PROJECT_DIR$/src/components/forms/ChatForm.js" />
++        <option value="$PROJECT_DIR$/src/components/forms/LoginForm.js" />
++        <option value="$PROJECT_DIR$/src/components/Login.js" />
++        <option value="$PROJECT_DIR$/src/components/Chats.js" />
++        <option value="$PROJECT_DIR$/src/components/CreateDialog.js" />
++        <option value="$PROJECT_DIR$/src/components/Navigation.js" />
++        <option value="$PROJECT_DIR$/src/App.js" />
++        <option value="$PROJECT_DIR$/src/components/objects/Chat.js" />
++        <option value="$PROJECT_DIR$/src/components/objects/Message.js" />
++        <option value="$PROJECT_DIR$/src/components/Home.js" />
++        <option value="$PROJECT_DIR$/src/components/Register.js" />
++        <option value="$PROJECT_DIR$/src/App.css" />
++        <option value="$PROJECT_DIR$/src/components/Dialog.js" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectFrameBounds">
++    <option name="x" value="245" />
+     <option name="y" value="23" />
+-    <option name="width" value="1908" />
+-    <option name="height" value="1124" />
++    <option name="width" value="1467" />
++    <option name="height" value="1122" />
++  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectView">
++    <navigator proportions="" version="1">
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes>
++      <pane id="ProjectPane">
++        <subPane>
++          <expand>
++            <path>
++              <item name="Dagchat" type="b2602c69:ProjectViewProjectNode" />
++              <item name="Dagchat" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="Dagchat" type="b2602c69:ProjectViewProjectNode" />
++              <item name="Dagchat" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="Dagchat" type="b2602c69:ProjectViewProjectNode" />
++              <item name="Dagchat" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="components" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="Dagchat" type="b2602c69:ProjectViewProjectNode" />
++              <item name="Dagchat" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="components" type="462c0819:PsiDirectoryNode" />
++              <item name="objects" type="462c0819:PsiDirectoryNode" />
++            </path>
++          </expand>
++          <select />
++        </subPane>
++      </pane>
++      <pane id="Scope" />
++    </panes>
+   </component>
+   <component name="PropertiesComponent">
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="javascript.karma.karma_node_package_dir" value="" />
++    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
++    <property name="list.type.of.created.stylesheet" value="CSS" />
++    <property name="node.js.detected.package.eslint" value="true" />
++    <property name="node.js.detected.package.standard" value="true" />
++    <property name="node.js.path.for.package.eslint" value="project" />
++    <property name="node.js.path.for.package.standard" value="project" />
++    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
++    <property name="node.js.selected.package.standard" value="" />
++    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
++    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
++    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+     <property name="nodejs_interpreter_path" value="node" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
++    <property name="nodejs_package_manager_path" value="yarn" />
++    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
++  </component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/components" />
++    </key>
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/components" />
++    </key>
++  </component>
++  <component name="RunDashboard">
++    <option name="ruleStates">
++      <list>
++        <RuleState>
++          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++        </RuleState>
++        <RuleState>
++          <option name="name" value="StatusDashboardGroupingRule" />
++        </RuleState>
++      </list>
++    </option>
++  </component>
++  <component name="RunManager">
++    <configuration default="true" type="js.build_tools.gulp">
++      <node-interpreter>project</node-interpreter>
++      <node-options />
++      <gulpfile />
++      <tasks />
++      <arguments />
++      <envs />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="js.build_tools.npm">
++      <package-json value="$PROJECT_DIR$/package.json" />
++      <command value="run" />
++      <scripts>
++        <script value="start" />
++      </scripts>
++      <node-interpreter value="project" />
++      <envs />
++      <method v="2">
++        <option name="NpmBeforeRunTask" enabled="true">
++          <package-json value="$PROJECT_DIR$/package.json" />
++          <command value="run" />
++          <scripts>
++            <script value="start" />
++          </scripts>
++          <node-interpreter value="/usr/local/bin/node" />
++          <package-manager value="npm" />
++          <envs />
++        </option>
++      </method>
++    </configuration>
++  </component>
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="7a3127b9-6226-4f3c-a194-9d98ab5c52b3" name="Default" comment="" />
++      <created>1559171171653</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1559171171653</updated>
++      <workItem from="1559171172929" duration="1396000" />
++      <workItem from="1559232165267" duration="1233000" />
++      <workItem from="1559233493988" duration="1493000" />
++      <workItem from="1559419196241" duration="1684000" />
++      <workItem from="1559464742056" duration="99000" />
++      <workItem from="1559464843827" duration="1317000" />
++      <workItem from="1559466246304" duration="98000" />
++      <workItem from="1559469092268" duration="1331000" />
++      <workItem from="1559485408251" duration="41000" />
++      <workItem from="1559485452274" duration="15000" />
++      <workItem from="1559485588364" duration="339000" />
++      <workItem from="1559487526795" duration="38000" />
++      <workItem from="1559487626288" duration="2547000" />
++      <workItem from="1559547388369" duration="620000" />
++      <workItem from="1559590686887" duration="10101000" />
++      <workItem from="1559639323434" duration="3132000" />
++      <workItem from="1559679351381" duration="151000" />
++      <workItem from="1559939081998" duration="9621000" />
++      <workItem from="1560002640349" duration="366000" />
++      <workItem from="1561531295266" duration="819000" />
++      <workItem from="1561558724246" duration="2000" />
++      <workItem from="1561558810846" duration="364000" />
++      <workItem from="1561559226828" duration="9740000" />
++      <workItem from="1561577101721" duration="3972000" />
++      <workItem from="1561630671331" duration="8616000" />
++      <workItem from="1561685144991" duration="11240000" />
++      <workItem from="1561708127171" duration="1520000" />
++      <workItem from="1561785930680" duration="841000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TestHistory">
++    <history-entry file="renders_without_crashing - 2019.05.30 at 02h 08m 56s.xml">
++      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
++    </history-entry>
++  </component>
++  <component name="TimeTrackingManager">
++    <option name="totallyTimeSpent" value="72736000" />
++  </component>
++  <component name="TodoView">
++    <todo-panel id="selected-file">
++      <is-autoscroll-to-source value="true" />
++    </todo-panel>
++    <todo-panel id="all">
++      <are-packages-shown value="true" />
++      <is-autoscroll-to-source value="true" />
++    </todo-panel>
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="245" y="23" width="1467" height="1122" extended-state="0" />
++    <editor active="true" />
++    <layout>
++      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6937591" visible="true" weight="0.25562373" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="npm" order="2" sideWeight="0.30624092" side_tool="true" weight="0.13954712" />
++      <window_info id="Favorites" order="3" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" weight="0.3282588" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" weight="0.32815534" />
++      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
++      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49921012" visible="true" weight="0.25784966" />
++      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007899" side_tool="true" weight="0.32911393" />
++      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32815534" />
++      <window_info anchor="bottom" id="TypeScript" order="11" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++    </layout>
++    <layout-to-restore>
++      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13954712" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="npm" order="2" side_tool="true" />
++      <window_info id="Favorites" order="3" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
++      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49921012" visible="true" weight="0.32911393" />
++      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007899" side_tool="true" weight="0.32911393" />
++      <window_info anchor="bottom" id="Version Control" order="10" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++    </layout-to-restore>
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="1" />
++  </component>
++  <component name="editorHistoryManager">
++    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js" />
++    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
++    <entry file="file://$PROJECT_DIR$/public/manifest.json" />
++    <entry file="file://$PROJECT_DIR$/src/index.css" />
++    <entry file="file://$PROJECT_DIR$/src/dom/Dom.js" />
++    <entry file="file://$PROJECT_DIR$/src/header/Header.js" />
++    <entry file="file://$PROJECT_DIR$/public/index.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="105">
++          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/footer/Footer.js" />
++    <entry file="file://$PROJECT_DIR$/src/root/Root.js" />
++    <entry file="file://$PROJECT_DIR$/src/wrapper/Wrapper.js" />
++    <entry file="file://$PROJECT_DIR$/node_modules/react-dev-utils/WebpackDevServerUtils.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="210">
++          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/yarn.lock">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="180">
++          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/.gitignore">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/README.md">
++      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
++        <state split_layout="SPLIT">
++          <first_editor>
++            <caret column="11" selection-start-column="11" selection-end-column="11" />
++          </first_editor>
++          <second_editor />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/package-lock.json">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="30">
++          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/template/Header.css" />
++    <entry file="file://$PROJECT_DIR$/src/components/Header.js" />
++    <entry file="file://$PROJECT_DIR$/src/components/Content.js" />
++    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="74850">
++          <caret line="5003" column="13" selection-start-line="5003" selection-start-column="13" selection-end-line="5003" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/FooterNavigation.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="345">
++          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Error.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="135">
++          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/node_modules/@types/unist/index.d.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="347">
++          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/node_modules/@types/yargs/index.d.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="335">
++          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/node_modules/@types/vfile/index.d.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="335">
++          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Rules.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="240">
++          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/package.json">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="510">
++          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/forms/ChatForm.js" />
++    <entry file="file://$PROJECT_DIR$/src/index.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="75">
++          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
++          <folding>
++            <element signature="e#0#26#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/forms/LoginForm.js" />
++    <entry file="file://$PROJECT_DIR$/src/components/Developers.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="90">
++          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/forms/RegisterForm.js" />
++    <entry file="file://$PROJECT_DIR$/src/components/About.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="643">
++          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Navigation.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="225">
++          <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="14" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="315">
++          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/yarn-error.log">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="227">
++          <caret line="781" column="44" selection-start-line="781" selection-start-column="44" selection-end-line="781" selection-end-column="44" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/App.css">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="4020">
++          <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Register.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="75">
++          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="375">
++          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/objects/Message.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="180">
++          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/objects/Chat.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="75">
++          <caret line="6" column="41" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="41" />
++          <folding>
++            <element signature="e#0#26#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Chats.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="585">
++          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
++          <folding>
++            <element signature="e#72#106#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/CreateDialog.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="870">
++          <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
++          <folding>
++            <element signature="e#0#39#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/App.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="330">
++          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/components/Dialog.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="570">
++          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
+   </component>
+ </project>
+\ No newline at end of file
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(date 1559171228000)
++++ README.md	(date 1561788226000)
+@@ -1,68 +1,6 @@
+-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-
+-## Available Scripts
+-
+-In the project directory, you can run:
+-
+-### `npm start`
+-
+-Runs the app in the development mode.<br>
+-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-
+-The page will reload if you make edits.<br>
+-You will also see any lint errors in the console.
+-
+-### `npm test`
+-
+-Launches the test runner in the interactive watch mode.<br>
+-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-
+-### `npm run build`
+-
+-Builds the app for production to the `build` folder.<br>
+-It correctly bundles React in production mode and optimizes the build for the best performance.
+-
+-The build is minified and the filenames include the hashes.<br>
+-Your app is ready to be deployed!
+-
+-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-
+-### `npm run eject`
+-
+-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-
+-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-
+-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-
+-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-
+-## Learn More
+-
+-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-
+-To learn React, check out the [React documentation](https://reactjs.org/).
+-
+-### Code Splitting
+-
+-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+-
+-### Analyzing the Bundle Size
++# egnaf-web
+ 
+-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+-
+-### Making a Progressive Web App
+-
+-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-
+-### Advanced Configuration
+-
+-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+-
+-### Deployment
+-
+-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+-
+-### `npm run build` fails to minify
+-
+-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
++## Dependencies
++- react<br>
++- react-router-dom<br>
++- react-scripts<br>
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package.json	(date 1559171228000)
++++ package.json	(date 1561788226000)
+@@ -1,10 +1,13 @@
+ {
+-  "name": "d-chat",
++  "name": "dagchat",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
++    "axios": "^0.19.0",
++    "is-root": "^2.1.0",
+     "react": "^16.8.6",
+     "react-dom": "^16.8.6",
++    "react-router-dom": "^5.0.0",
+     "react-scripts": "3.0.1"
+   },
+   "scripts": {
+Index: public/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/index.html	(date 1559171228000)
++++ public/index.html	(date 1561788226000)
+@@ -1,38 +1,8 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-  <head>
+-    <meta charset="utf-8" />
+-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+-    <meta name="theme-color" content="#000000" />
+-    <!--
+-      manifest.json provides metadata used when your web app is installed on a
+-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+-    -->
+-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+-    <!--
+-      Notice the use of %PUBLIC_URL% in the tags above.
+-      It will be replaced with the URL of the `public` folder during the build.
+-      Only files inside the `public` folder can be referenced from the HTML.
+-
+-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+-      work correctly both with client-side routing and a non-root public URL.
+-      Learn how to configure a non-root public URL by running `npm run build`.
+-    -->
+-    <title>React App</title>
+-  </head>
+-  <body>
+-    <noscript>You need to enable JavaScript to run this app.</noscript>
+-    <div id="root"></div>
+-    <!--
+-      This HTML file is a template.
+-      If you open it directly in the browser, you will see an empty page.
+-
+-      You can add webfonts, meta tags, or analytics to this file.
+-      The build step will place the bundled scripts into the <body> tag.
+-
+-      To begin the development, run `npm start` or `yarn start`.
+-      To create a production bundle, use `npm run build` or `yarn build`.
+-    -->
+-  </body>
+-</html>
++<html>
++    <head>
++        <title>Chat</title>
++    </head>
++    <body>
++        <div id="root"></div>
++    </body>
++</html>
+\ No newline at end of file
+Index: public/manifest.json
+===================================================================
+--- public/manifest.json	(date 1559171228000)
++++ public/manifest.json	(date 1559171228000)
+@@ -1,15 +0,0 @@
+-{
+-  "short_name": "React App",
+-  "name": "Create React App Sample",
+-  "icons": [
+-    {
+-      "src": "favicon.ico",
+-      "sizes": "64x64 32x32 24x24 16x16",
+-      "type": "image/x-icon"
+-    }
+-  ],
+-  "start_url": ".",
+-  "display": "standalone",
+-  "theme_color": "#000000",
+-  "background_color": "#ffffff"
+-}
+Index: src/App.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.css	(date 1559171228000)
++++ src/App.css	(date 1561788226000)
+@@ -1,33 +1,478 @@
+-.App {
+-  text-align: center;
++* {
++    margin: 0;
++    padding: 0;
++}
++html {
++    background-color: #ffffff;
++}
++body {
++    font-size: 16px;
++    line-height: 24px;
++    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
++}
++
++/* standard tags */
++p {
++    text-indent: 40px;
++}
++h1 {
++    font-size: 24px;
++    margin: 30px 0;
++}
++h2 {
++    font-size: 22px;
++    margin: 10px 0;
++}
++h3 {
++    font-size: 20px;
++}
++h4 {
++    font-size: 18px;
++}
++h5 {
++    font-size: 16px;
++}
++h6 {
++    font-size: 14px;
++}
++span {
++
++}
++a {
++    text-decoration: none;
++    color: dodgerblue;
++}
++a:hover {
++    text-decoration: underline;
++}
++
++/* header */
++.header {
++    width: 100%;
++    height: 60px;
++    background: #ffffff;
++    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
++}
++.header .navigation {
++    margin: 0 auto;
++    width: 720px;
++    height: inherit;
++}
++.header .navigation .link {
++    float: left;
++    display: block;
++    line-height: 60px;
++}
++.header .navigation .profile {
++    float: right;
++    display: block;
++    line-height: 60px;
++}
++.header .navigation .find {
++    padding: 0 30px;
++    float: right;
++    display: block;
++    line-height: 60px;
++}
++.header .navigation a {
++    padding: 0 10px;
++    display: block;
++    width: auto;
++    height: inherit;
++    color: #777777;
++    font-size: 14px;
++    opacity: .9;
++}
++.header .navigation a:hover {
++    color: #000000;
++    text-decoration: none;
++}
++
++/* wrapper */
++.wrapper {
++    width: 100%;
++    min-height: 300px;
++}
++.wrapper .content {
++    margin: 0 auto;
++    width: 720px;
++    min-height: inherit;
++}
++.wrapper .content .indent {
++    padding: 0 20px;
++}
++
++.input {
++    display: table;
++    margin: 0 auto 14px auto;
++    padding: 10px 20px;
++    width: 240px;
++    border-radius: 20px;
++    border: 1px solid #dddddd;
++    outline: none;
++    font-size: 14px;
++    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
++}
++.input:hover {
++    border-color: #508ccd;
++    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
++}
++.input:active {
++    border-color: #589ae2;
++    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
++}
++.input:focus {
++    border-color: #4272a7;
++    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
++}
++.input-error {
++    border-color: #ff4b57;
++}
++.checkbox-block {
++    margin: 20px auto;
++    width: 200px;
++    height: 38px;
++    line-height: 38px;
++    color: #777777;
++    font-size: 14px;
++}
++.checkbox-block .checkbox {
++    margin: 0;
++    width: 38px;
++    height: 38px;
++    float: left;
++    border-radius: 50%;
++}
++.checkbox-block label {
++    margin-left: -12px;
++}
++
++.button {
++    padding: 0 40px;
++    margin: 10px auto;
++    display: block;
++    height: 38px;
++    width: fit-content;
++    line-height: 38px;
++    border-radius: 20px;
++    border: 0;
++    outline: none;
++    font-size: 14px;
++    background-color: #508ccd;
++    color: #ffffff;
++    cursor: pointer;
++    transition: .05s;
++}
++.button:hover {
++    background-color: #589ae2;
++    text-decoration: none;
++}
++.button:focus {
++    background-color: #5ea5f2;
++    text-decoration: none;
++}
++.button:active {
++    background-color: #4272a7;
++    padding: 0 38px;
++    font-size: 13px;
++}
++
++.send-button {
++    padding: 0 20px;
++    margin: 21px auto;
++    display: block;
++    height: 38px;
++    width: fit-content;
++    line-height: 38px;
++    border-radius: 20px;
++    border: 0;
++    outline: none;
++    font-size: 14px;
++    background-color: #5059cd;
++    color: #ffffff;
++    cursor: pointer;
++    transition: .05s;
++}
++.send-button:hover {
++    background-color: #565cea;
++    text-decoration: none;
++}
++.send-button:active {
++    background-color: #3e449d;
++    padding: 0 20px;
++    font-size: 13px;
++}
++
++.open-block {
++    padding: 100px 0 0 0;
++    width: 680px;
++}
++.open-block #status {
++    height: 30px;
++    width: 100%;
++    text-align: center;
++    color: #ff484b;
++    font-size: 12px;
++}
++.create-block {
++    padding: 100px 0 0 0;
++    text-align: center;
++    color: #c0c0c0;
++}
++
++.create-block .button {
++    padding: 0 40px;
++    margin: 10px auto;
++    display: block;
++    height: 38px;
++    width: fit-content;
++    line-height: 38px;
++    border-radius: 20px;
++    border: 0;
++    outline: none;
++    font-size: 14px;
++    background-color: #4bba62;
++    color: #ffffff;
++    cursor: pointer;
++    transition: .05s;
++}
++.create-block .button:hover {
++    background-color: #49b45f;
++    text-decoration: none;
++}
++.create-block .button:focus {
++    background-color: #53cd6c;
++    text-decoration: none;
++}
++.create-block .button:active {
++    background-color: #3a904c;
++    padding: 0 38px;
++    font-size: 13px;
++}
++
++.create-dialog {
++    margin: 200px auto;
++    width: 680px;
++    min-height: inherit;
+ }
+ 
+-.App-logo {
+-  animation: App-logo-spin infinite 20s linear;
+-  height: 40vmin;
+-  pointer-events: none;
++.dialog {
++    margin: 0 auto;
++    width: 700px;
++    min-height: inherit;
+ }
+ 
+-.App-header {
+-  background-color: #282c34;
+-  min-height: 100vh;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: calc(10px + 2vmin);
+-  color: white;
++.toolbar {
++    width: 700px;
++    height: 60px;
++    background: #f7d2d2;
++}
++.messages {
++    width: 700px;
++    max-height: calc(100% - 140px);
++    /*background: #eef2f7;*/
++    overflow: auto;
++}
++.messages .message {
++    display: table;
++    width: 100%;
++}
++.messages .message .text {
++    padding: 10px 20px;
++    margin: 10px;
++    font-size: 14px;
++    /*background: #eee;*/
++    width: fit-content;
++    max-width: 70%;
++    min-height: fit-content;
++    border-radius: 20px;
++}
++.messages .message .you {
++    float: left;
++    /*background: rgba(255, 188, 118, 0.30);*/
++}
++.messages .message .me {
++    float: left;
++    /*background: rgba(157, 214, 234, 0.30);*/
++}
++.messages .message .text .info {
++    width: 100%;
++    height: 20px;
++}
++.messages .message .text .info .date {
++    width: fit-content;
++    height: 20px;
++    border-radius: 50%;
++    float: left;
++    margin: 0 5px;
++    font-size: 12px;
++    color: #a0a0a0;
++}
++.messages .message .text .info .send {
++    width: 10px;
++    height: 10px;
++    background: rgba(234, 58, 60, 0.64);
++    border-radius: 50%;
++    float: left;
++    margin: 5px;
++    line-height: 20px;
++}
++.messages .message .text .info .send-ed {
++    width: 10px;
++    height: 10px;
++    background: rgba(152, 234, 163, 0.6);
++    border-radius: 50%;
++    float: left;
++    margin: 5px;
++    line-height: 20px;
+ }
+ 
+-.App-link {
+-  color: #61dafb;
++.code {
++    font-family: monospace;
++    font-size: 14px;
++}
++.sticker {
++    width: 200px;
++    height: 150px;
++    background: url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftelegram.org%2Ffile%2F811140183%2F1%2FCUZcEgoz428%2Fece4d02f9a12a03fde&f=1) no-repeat center;
++    background-size: 120px;
++    float: right;
+ }
+ 
+-@keyframes App-logo-spin {
+-  from {
+-    transform: rotate(0deg);
+-  }
+-  to {
+-    transform: rotate(360deg);
+-  }
++
++.field {
++    width: 700px;
++    min-height: 80px;
++    /*background: #c7e0e0;*/
++    bottom: 0;
++    position: absolute;
++}
++.field .text {
++    margin: 10px;
++    padding: 15px 20px;
++    width: calc(100% - 100px);
++    height: 50px;
++    border: 1px solid #dddddd;
++    border-radius: 25px;
++    outline: none;
++    font-size: 14px;
++    line-height: 20px;
++    float: left;
++    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
++}
++.field .smiles {
++    display: block;
++    margin: 20px 560px;
++    width: 32px;
++    height: 32px;
++    position: absolute;
++    background: #ffe29a;
++    border-radius: 50%;
++    font-size: 12px;
++    text-align: center;
++    line-height: 32px;
++    color: #909090;
+ }
++.field .audio {
++    display: block;
++    margin: 20px 520px;
++    width: 32px;
++    height: 32px;
++    position: absolute;
++    background: #baeac2;
++    border-radius: 50%;
++    font-size: 12px;
++    text-align: center;
++    line-height: 32px;
++    color: #909090;
++}
++
++.left-bar {
++    width: 80px;
++    height: 100%;
++    background-color: #ffffff;
++    position: fixed;
++    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
++}
++.left-bar .profile {
++    margin: 40px 10px;
++    width: 60px;
++    height: 60px;
++    background-color: #e7e7e7;
++    position: absolute;
++    bottom: 0;
++    border-radius: 50%;
++}
++
++/* footer */
++.footer {
++    margin-top: 300px;
++    min-height: 100px;
++}
++.footer .navigation {
++    margin: 0 auto;
++    width: 720px;
++    height: inherit;
++}
++.footer .navigation .link {
++    float: left;
++    display: block;
++    line-height: 30px;
++}
++.footer .navigation .link a {
++    margin: 0 10px;
++    display: block;
++    width: auto;
++    height: inherit;
++    color: #777777;
++    font-size: 16px;
++    opacity: .9;
++    border-bottom: 1px solid transparent;
++}
++.footer .navigation .link a:hover {
++    color: #000000;
++    border-bottom: 1px solid #777777;
++    text-decoration: none;
++}
++
++.chat {
++    margin: 5px 0;
++}
++
++.chat .box {
++    min-height: 40px;
++    line-height: 40px;
++}
++
++.chat a {
++    display: block;
++    padding: 0 10px;
++    height: 40px;
++    text-decoration: none;
++}
++.chat a:hover {
++    background-color: #eef4fb;
++}
++.chat .secret {
++    font-size: 12px;
++    color: darkgreen;
++}
++.chat .no_secret {
++    font-size: 12px;
++    color: darkred;
++}
++a.create-chat-button {
++    padding: 3px 10px;
++    color: #ffffff;
++    font-size: 12px;
++    background-color: #3a904c;
++    line-height: 40px;
++    border-radius: 25px;
++    text-decoration: none;
++}
++a.create-chat-button :hover {
++}
++.chat-id {
++    font-size: 13px;
++    color: #777777;
++}
+\ No newline at end of file
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(date 1559171228000)
++++ src/App.js	(date 1561788226000)
+@@ -1,26 +1,56 @@
+-import React from 'react';
+-import logo from './logo.svg';
+-import './App.css';
++import React, { Component } from 'react';
++import { BrowserRouter, Route, Switch } from 'react-router-dom';
++
++import Home from './components/Home';
++import Dialog from './components/Dialog';
++import About from './components/About'
++import Error from './components/Error';
++import Rules from './components/Rules';
++import Developers from './components/Developers';
++import CreateDialog from './components/CreateDialog';
++import Navigation from './components/Navigation';
++import Login from './components/Login';
++import Register from './components/Register';
++import Chats from './components/Chats';
+ 
+-function App() {
+-  return (
+-    <div className="App">
+-      <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.js</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+-      </header>
+-    </div>
+-  );
++class App extends Component {
++
++  render() {
++    return (
++      <BrowserRouter>
++        <div>
++          {/*<div className={'left-bar'}>*/}
++          {/*  <div className={'profile'}>*/}
++          {/*  </div>*/}
++          {/*</div>*/}
++
++          <div className="header">
++            <Navigation/>
++          </div>
++
++          <div className="wrapper">
++            <Switch>
++              <Route path="/" component={Home} exact />
++              <Route path="/dialog" component={Dialog} />
++              <Route path="/create" component={CreateDialog} />
++              <Route path="/chats/:name" component={Dialog} />
++              <Route path="/chats" component={Chats} />
++              <Route path="/about" component={About} />
++              <Route path="/rules" component={Rules} />
++              <Route path="/dev" component={Developers} />
++              <Route path="/login" component={Login} />
++              <Route path="/register" component={Register} />
++              <Route component={Error} />
++            </Switch>
++          </div>
++
++          {/*<div className="footer">*/}
++          {/*  <FooterNavigation/>*/}
++          {/*</div>*/}
++        </div>
++      </BrowserRouter>
++    );
++  }
+ }
+ 
+-export default App;
++export default App;
+\ No newline at end of file
+Index: src/App.test.js
+===================================================================
+--- src/App.test.js	(date 1559171228000)
++++ src/App.test.js	(date 1559171228000)
+@@ -1,9 +0,0 @@
+-import React from 'react';
+-import ReactDOM from 'react-dom';
+-import App from './App';
+-
+-it('renders without crashing', () => {
+-  const div = document.createElement('div');
+-  ReactDOM.render(<App />, div);
+-  ReactDOM.unmountComponentAtNode(div);
+-});
+Index: src/components/About.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/About.js	(date 1561788226000)
++++ src/components/About.js	(date 1561788226000)
+@@ -0,0 +1,46 @@
++import React, { Component } from 'react';
++import {NavLink} from "react-router-dom";
++
++
++class About extends Component {
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <h1>About</h1>
++          <NavLink to={"/"}>1. Create chat</NavLink><br/>
++          <NavLink to={"/"}>2. Open chat</NavLink><br/>
++          <NavLink to={"/"}>3. Get messages</NavLink><br/>
++          <NavLink to={"/"}>4. Send message</NavLink><br/>
++          <br/>
++          <br/>
++          <h2>Create chat</h2>
++          <p>
++            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid cupiditate enim inventore iusto minus nihil, nisi nulla odit, provident, quas rerum vitae voluptatibus! A alias animi, at blanditiis consequatur distinctio ea earum eum, hic incidunt inventore magni minima minus nam nobis officiis optio quas quibusdam quidem quo sit voluptates voluptatum. Accusantium adipisci alias autem beatae consequatur, consequuntur corporis deserunt ducimus ea eius enim excepturi facere fugiat in iste iusto molestiae numquam obcaecati possimus provident quibusdam quis quos rem repellendus soluta tempore vitae voluptatum. Accusamus accusantium ad, aliquid animi at consequatur, enim esse itaque provident repellendus ullam unde velit, voluptates.
++          </p>
++          <br/>
++          <br/>
++
++
++          <h2>Open chat</h2>
++          <p>
++            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid cupiditate enim inventore iusto minus nihil, nisi nulla odit, provident, quas rerum vitae voluptatibus! A alias animi, at blanditiis consequatur distinctio ea earum eum, hic incidunt inventore magni minima minus nam nobis officiis optio quas quibusdam quidem quo sit voluptates voluptatum. Accusantium adipisci alias autem beatae consequatur, consequuntur corporis deserunt ducimus ea eius enim excepturi facere fugiat in iste iusto molestiae numquam obcaecati possimus provident quibusdam quis quos rem repellendus soluta tempore vitae voluptatum. Accusamus accusantium ad, aliquid animi at consequatur, enim esse itaque provident repellendus ullam unde velit, voluptates.
++          </p>
++          <br/>
++          <br/>
++
++
++          <h2>Get messages</h2>
++          <p>
++            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid cupiditate enim inventore iusto minus nihil, nisi nulla odit, provident, quas rerum vitae voluptatibus! A alias animi, at blanditiis consequatur distinctio ea earum eum, hic incidunt inventore magni minima minus nam nobis officiis optio quas quibusdam quidem quo sit voluptates voluptatum. Accusantium adipisci alias autem beatae consequatur, consequuntur corporis deserunt ducimus ea eius enim excepturi facere fugiat in iste iusto molestiae numquam obcaecati possimus provident quibusdam quis quos rem repellendus soluta tempore vitae voluptatum. Accusamus accusantium ad, aliquid animi at consequatur, enim esse itaque provident repellendus ullam unde velit, voluptates.
++          </p>
++          <br/>
++          <br/>
++        </div>
++      </div>
++    );
++  }
++}
++
++export default About;
+\ No newline at end of file
+Index: src/components/Chats.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Chats.js	(date 1561788226000)
++++ src/components/Chats.js	(date 1561788226000)
+@@ -0,0 +1,53 @@
++import React, { Component } from 'react';
++// import axios from "axios";
++import Chat from "./objects/Chat";
++import {NavLink} from "react-router-dom";
++
++
++class Chats extends Component {
++
++  constructor(props, context) {
++    super(props, context);
++    this.state = {chats: []};
++    this.getChats();
++  }
++
++  getChats = () => {
++    // axios.get('http://127.0.0.1:8080/chats').then((res) => {
++    //   console.log(res.data);
++    // });
++
++
++    fetch('http://127.0.0.1:8080/chats')
++      .then(response => {
++        return response.json();
++      }).then(result => {
++      this.setState({
++        chats: result
++      });
++    });
++  };
++
++  render() {
++    return (
++      <div className={'content'}>
++        <div className={'indent'}>
++          <div>
++            <h1>Chats <NavLink className={'create-chat-button'} to={'/create'}>Create</NavLink></h1>
++          </div>
++          {this.state.chats.map((chat, index) => {
++            return (
++                <Chat
++                  key={index}
++                  id={chat.id}
++                  name={chat.name}
++                  secret={chat.secret}/>
++            )
++          })}
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Chats;
+\ No newline at end of file
+Index: src/components/CreateDialog.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/CreateDialog.js	(date 1561788226000)
++++ src/components/CreateDialog.js	(date 1561788226000)
+@@ -0,0 +1,87 @@
++import React, {Component} from 'react';
++import axios from "axios";
++
++
++class CreateDialog extends Component {
++
++  getChat = (e) => {
++    e.preventDefault();
++    let chat = e.target.elements.chat.value;
++    let secret = e.target.elements.secret.checked;
++
++    //console.log(user + " " + pass + " " + pass2);
++
++    axios.get(`http://127.0.0.1:8080/chats/${chat}`).then((res) => {
++      //console.log(res.data);
++
++      if (chat !== '') {
++        if (res.data.name !== chat) {
++
++          axios.post('http://127.0.0.1:8080/chats', {
++            name: chat,
++            secret: secret
++          })
++            .then(function (response) {
++              console.log(response);
++            })
++            .catch(function (error) {
++              console.log(error);
++            });
++
++          console.log("Registered!");
++
++        } else {
++          console.log("Chat is already extends.");
++          this.getError();
++        }
++      } else {
++        console.log('Error: Empty field.')
++      }
++    });
++  };
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <div className={"create-dialog"}>
++
++            <form onSubmit={this.getChat} className={"open-block"}>
++              <div id={"status"}/>
++
++              <div>
++                <input id={"finder"} className="input" name={'chat'} type={"text"} placeholder={"Dialog title"}/>
++              </div>
++
++              <div className={"checkbox-block"}>
++                <input id="isPrivate" className={"checkbox"} name={'secret'} type="checkbox"/>
++                <label htmlFor="isPrivate">Make private this chat</label><br/>
++              </div>
++              <button className="button">Create</button>
++            </form>
++
++          </div>
++        </div>
++      </div>
++    );
++  }
++
++  getError() {
++    let status = document.getElementById('status').innerHTML;
++
++    if (status === '') {
++      document.getElementById('status').innerHTML = 'Chat name is already extends.';
++      document.getElementById('finder').classList.add('input-error');
++    } else {
++      document.getElementById('status').innerHTML = '';
++      document.getElementById('finder').classList.remove('input-error')
++    }
++
++    document.getElementById('finder').addEventListener('click', function () {
++      document.getElementById('status').innerHTML = '';
++      document.getElementById('finder').classList.remove('input-error')
++    });
++  }
++}
++
++export default CreateDialog;
+\ No newline at end of file
+Index: src/components/Developers.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Developers.js	(date 1561788226000)
++++ src/components/Developers.js	(date 1561788226000)
+@@ -0,0 +1,17 @@
++import React, { Component } from 'react';
++
++
++class Developers extends Component {
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <h1>Developers</h1>
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Developers;
+\ No newline at end of file
+Index: src/components/Dialog.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Dialog.js	(date 1561788226000)
++++ src/components/Dialog.js	(date 1561788226000)
+@@ -0,0 +1,149 @@
++import React, { Component } from 'react';
++import axios from 'axios';
++import Message from "./objects/Message";
++
++
++class Dialog extends Component {
++
++  chat_name = '';
++
++  constructor(props, context) {
++    super(props, context);
++    this.state = {
++      messages: [],
++      name: this.props.match.params.name
++    };
++    this.getMessages();
++  }
++
++  getMessages() {
++    let chat_name = window.location.pathname.split("/").pop();
++
++
++    axios.get(`http://127.0.0.1:8080/messages/${chat_name}`)
++      .then(response => {
++        this.setState({
++          name: this.props.match.params.name
++        });
++        this.chat_name = this.props.match.params.name;
++        return response.data;
++      }).then(result => {
++      this.setState({
++        messages: result
++      });
++    }).then(() => {
++      console.log(this.state.messages);
++      console.log(this.state.name);
++    });
++  }
++
++  addMessage = () => {
++    let text = document.getElementById('text').value;
++    console.log(text);
++    if (text === '') return 0;
++
++    // const date = new Date().getDate(); //Current Date
++    // const month = new Date().getMonth() + 1; //Current Month
++    // const day = new Date().getDay(); //Current Month
++    // const year = new Date().getFullYear(); //Current Year
++    // const hours = new Date().getHours(); //Current Hours
++    // const min = new Date().getMinutes(); //Current Minutes
++    // const sec = new Date().getSeconds(); //Current Seconds
++
++    axios.post('http://127.0.0.1:8080/messages', {
++      username: 'anonymous',
++      message: text,
++      chat: window.location.pathname.split("/").pop(),
++      times: null
++    }).then(function (response) {
++      console.log(response);
++    }).catch(function (error) {
++      console.log(error);
++    });
++
++    // axios.get(`http://127.0.0.1:8080/messages/${this.props.match.params.name}`)
++    //   .then(response => {
++    //     this.setState({
++    //       name: this.props.match.params.name
++    //     });
++    //     this.chat_name = this.props.match.params.name;
++    //     return response.data;
++    //   }).then(result => {
++    //   this.setState({
++    //     messages: result
++    //   });
++    // }).then(() => {
++    //   console.log(this.state.messages);
++    //   console.log(this.state.name);
++    // });
++  };
++
++
++
++  // componentDidUpdate(prevProps) {
++  //   // Типичный вариант использования (не забудьте сравнить props):
++  //   this.getMessages();
++  // }
++
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <div className={"dialog"}>
++
++            {/*<div className={"toolbar"}>*/}
++            {/*  toolbar*/}
++            {/*</div>*/}
++
++            <div id={'messages'} className={"messages"}>
++              <div>
++                {this.state.messages.map((message) => {
++                  return (
++                    <Message
++                      key={message.id}
++                      user={message.username}
++                      time={message.times}
++                      text={message.message}/>
++                  )
++                })}
++              </div>
++            </div>
++
++            <div className={"field"}>
++              <textarea id={'text'} className={"text"} name={'text'} placeholder={"Enter your message here..."}>
++              </textarea>
++              <div className={"audio"}>
++                F1
++              </div>
++              <div className={"smiles"}>
++                F2
++              </div>
++              <button onClick={this.addMessage} className={"send-button"}>Send</button>
++            </div>
++
++          </div>
++        </div>
++      </div>
++    );
++  }
++
++  messages() {
++    return (
++      <div>
++        {this.state.messages.map((message) => {
++          return (
++            <Message
++              key={message.id}
++              user={message.username}
++              time={message.times}
++              text={message.message}/>
++          )
++        })}
++      </div>
++    )
++  }
++
++}
++
++export default Dialog;
+\ No newline at end of file
+Index: src/components/Error.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Error.js	(date 1561788226000)
++++ src/components/Error.js	(date 1561788226000)
+@@ -0,0 +1,17 @@
++import React, { Component } from 'react';
++
++class Error extends Component {
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <h1>Error 404.</h1>
++          This page does not found!
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Error;
+\ No newline at end of file
+Index: src/components/FooterNavigation.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/FooterNavigation.js	(date 1561788226000)
++++ src/components/FooterNavigation.js	(date 1561788226000)
+@@ -0,0 +1,24 @@
++import React, { Component } from 'react';
++import { NavLink } from 'react-router-dom';
++
++
++class FooterNavigation extends Component {
++
++  render() {
++    return (
++      <div className="navigation">
++        <div className="link">
++          <NavLink to="/about">About</NavLink>
++        </div>
++        <div className="link">
++          <NavLink to="/rules">Rules</NavLink>
++        </div>
++        <div className="link">
++          <NavLink to="/dev">Developers</NavLink>
++        </div>
++      </div>
++    );
++  }
++}
++
++export default FooterNavigation;
+\ No newline at end of file
+Index: src/components/Home.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Home.js	(date 1561788226000)
++++ src/components/Home.js	(date 1561788226000)
+@@ -0,0 +1,78 @@
++import React, { Component } from 'react';
++import {NavLink} from "react-router-dom";
++import axios from "axios";
++
++
++class Home extends Component {
++
++  constructor(props, context) {
++    super(props, context);
++    this.state = {
++      url: ''
++    };
++  }
++
++  getChat = () => {
++    const chat = document.getElementById('finder').value;
++    //console.log(user + " " + pass);
++
++    axios.get(`http://127.0.0.1:8080/chats/${chat}`).then((res) => {
++      console.log(res.data);
++
++      if (res.data.name === chat) {
++
++        this.setState({
++          url: '/chats/' + res.data.name
++        });
++        console.log("Chat was found!");
++        this.doFound();
++
++      } else {
++
++        this.setState({
++          url: ''
++        });
++        console.log("Chat not found!");
++        this.doNotFound();
++
++      }
++    });
++  };
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <form onChange={this.getChat} className={"open-block"}>
++            <div id={"status"}/>
++            <input id={"finder"} className={"input"} name="chat" type={"text"} placeholder={"Secret code or chat name"}/>
++            <NavLink to={this.state.url} className={"button"}>Find chat</NavLink>
++          </form>
++
++          <div className={"create-block"}>
++            <span>&mdash;&mdash;&mdash; OR &mdash;&mdash;&mdash;</span>
++            <NavLink id={"create"} className={"button"} to="/create">Create secret chat</NavLink>
++          </div>
++        </div>
++      </div>
++    );
++  }
++
++  doNotFound() {
++    let status = document.getElementById('status').innerHTML;
++    if (status === '') {
++      document.getElementById('status').innerHTML = 'The secret chat does not found.';
++      document.getElementById('finder').classList.add('input-error');
++    }
++  }
++
++  doFound() {
++    let status = document.getElementById('status').innerHTML;
++    if (status !== '') {
++      document.getElementById('status').innerHTML = '';
++      document.getElementById('finder').classList.remove('input-error')
++    }
++  }
++}
++
++export default Home;
+\ No newline at end of file
+Index: src/components/Login.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Login.js	(date 1561788226000)
++++ src/components/Login.js	(date 1561788226000)
+@@ -0,0 +1,47 @@
++import React, { Component } from 'react';
++import axios from 'axios';
++import {NavLink} from "react-router-dom";
++
++class Login extends Component {
++
++  getUser = (e) => {
++    e.preventDefault();
++    const user = e.target.elements.username.value;
++    const pass = e.target.elements.password.value;
++    console.log(user + " " + pass);
++
++    axios.get(`http://127.0.0.1:8080/users/${user}`).then((res) => {
++        // console.log(res.data);
++
++        if (res.data.username === user && pass === res.data.password) {
++          console.log("Log in success!");
++        } else {
++          console.log("Log in failed!");
++        }
++      });
++  };
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++
++          <form onSubmit={this.getUser} className={"open-block"}>
++            <div id={"status"}>
++            </div>
++            <input id={"username"} className={"input"} type={"text"} name="username" placeholder={"Login"}/>
++            <input id={"password"} className={"input"} type={"password"} name="password" placeholder={"Password"}/>
++            <button id="login" className={"button"}>Sign in</button>
++          </form>
++          <form className={"create-block"}>
++            <span>&mdash;&mdash;&mdash; OR &mdash;&mdash;&mdash;</span>
++            <NavLink id={"create"} className={"button"} to="/register">Create account</NavLink>
++          </form>
++
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Login;
+\ No newline at end of file
+Index: src/components/Navigation.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Navigation.js	(date 1561788226000)
++++ src/components/Navigation.js	(date 1561788226000)
+@@ -0,0 +1,32 @@
++import React, { Component } from 'react';
++import { NavLink } from 'react-router-dom';
++
++
++class Navigation extends Component {
++
++  render() {
++    return (
++      <div className="navigation">
++        <div className="link">
++          <NavLink to="/">Home</NavLink>
++        </div>
++        <div className="link">
++          <NavLink to="/chats">Chats</NavLink>
++        </div>
++        <div className="link">
++          <NavLink to="/about">About</NavLink>
++        </div>
++        <div className="link">
++          <NavLink to="/dev">Developers</NavLink>
++        </div>
++        <div className={"profile"}>
++          <NavLink to="/login">Sign in</NavLink>
++        </div>
++        <div className={"find"}>
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Navigation;
+\ No newline at end of file
+Index: src/components/Register.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Register.js	(date 1561788226000)
++++ src/components/Register.js	(date 1561788226000)
+@@ -0,0 +1,68 @@
++import React, { Component } from 'react';
++import axios from 'axios';
++import {NavLink} from "react-router-dom";
++
++class Register extends Component {
++
++  getUser = (e) => {
++    e.preventDefault();
++    const user = e.target.elements.username.value;
++    const pass = e.target.elements.password.value;
++    const pass2 = e.target.elements.password2.value;
++
++    //console.log(user + " " + pass + " " + pass2);
++
++    axios.get(`http://127.0.0.1:8080/users/${user}`).then((res) => {
++      // console.log(res.data);
++
++      if (user !== '' && pass !== '' && pass2 !== '') {
++        if (res.data.username !== user) {
++          if (pass !== pass2) {
++            console.log("Passwords are not similar!");
++          } else {
++
++            axios.post('http://127.0.0.1:8080/users', {
++              username: user,
++              password: pass
++            }).then(function (response) {
++              console.log(response);
++            }).catch(function (error) {
++              console.log(error);
++            });
++
++            console.log("Registered!");
++          }
++        } else {
++          console.log("Username already extends.");
++        }
++      } else {
++        console.log('Error: Empty field.')
++      }
++    });
++  };
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++
++          <form onSubmit={this.getUser} className={"open-block"}>
++            <div id={"status"}>
++            </div>
++            <input id={"username"} className={"input"} type={"text"} name="username" placeholder={"Login"}/>
++            <input id={"password"} className={"input"} type={"password"} name="password" placeholder={"Password"}/>
++            <input id={"password2"} className={"input"} type={"password"} name="password2" placeholder={"Repeat password"}/>
++            <button className={"button"}>Create</button>
++          </form>
++          <form className={"create-block"}>
++            <span>&mdash;&mdash;&mdash; OR &mdash;&mdash;&mdash;</span>
++            <NavLink id={"create"} className={"button"} to="/login">Sign in</NavLink>
++          </form>
++
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Register;
+\ No newline at end of file
+Index: src/components/Rules.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Rules.js	(date 1561788226000)
++++ src/components/Rules.js	(date 1561788226000)
+@@ -0,0 +1,17 @@
++import React, { Component } from 'react';
++
++
++class Rules extends Component {
++
++  render() {
++    return (
++      <div className={"content"}>
++        <div className={"indent"}>
++          <h1>Rules</h1>
++        </div>
++      </div>
++    );
++  }
++}
++
++export default Rules;
+\ No newline at end of file
+Index: src/components/objects/Chat.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/objects/Chat.js	(date 1561788226000)
++++ src/components/objects/Chat.js	(date 1561788226000)
+@@ -0,0 +1,14 @@
++import React from 'react';
++import {NavLink} from "react-router-dom";
++
++export default (props) => (
++  <div className={'chat'}>
++    <div className={'box'}>
++      <NavLink to={'/chats/' + props.name}>
++        <span className={'chat-id'}>{props.id}</span> &nbsp;
++        {props.name} &nbsp;
++        <span className={props.secret ? 'secret' : 'no_secret'}>
++          {props.secret ? 'secret' : 'no secret'}</span></NavLink>
++    </div>
++  </div>
++)
+\ No newline at end of file
+Index: src/components/objects/Message.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/objects/Message.js	(date 1561788226000)
++++ src/components/objects/Message.js	(date 1561788226000)
+@@ -0,0 +1,13 @@
++import React from 'react';
++
++export default (props) => (
++  <div className={"message"}>
++    <div className={"text me"}>
++      <b>{props.user}</b>: {props.text}
++      <div className={"info"}>
++        {/*<div className={"send-ed"}/>*/}
++        <div className={"date"}>{props.time}</div>
++      </div>
++    </div>
++  </div>
++)
+\ No newline at end of file
+Index: src/index.css
+===================================================================
+--- src/index.css	(date 1559171228000)
++++ src/index.css	(date 1559171228000)
+@@ -1,13 +0,0 @@
+-body {
+-  margin: 0;
+-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+-    sans-serif;
+-  -webkit-font-smoothing: antialiased;
+-  -moz-osx-font-smoothing: grayscale;
+-}
+-
+-code {
+-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+-    monospace;
+-}
+Index: src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/index.js	(date 1559171228000)
++++ src/index.js	(date 1561788226000)
+@@ -1,12 +1,6 @@
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+-import './index.css';
+ import App from './App';
+-import * as serviceWorker from './serviceWorker';
++import './App.css';
+ 
+-ReactDOM.render(<App />, document.getElementById('root'));
+-
+-// If you want your app to work offline and load faster, you can change
+-// unregister() to register() below. Note this comes with some pitfalls.
+-// Learn more about service workers: https://bit.ly/CRA-PWA
+-serviceWorker.unregister();
++ReactDOM.render(<App />, document.getElementById('root'));
+\ No newline at end of file
+Index: src/logo.svg
+===================================================================
+--- src/logo.svg	(date 1559171228000)
++++ src/logo.svg	(date 1559171228000)
+@@ -1,7 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+-    <g fill="#61DAFB">
+-        <path d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"/>
+-        <circle cx="420.9" cy="296.5" r="45.7"/>
+-        <path d="M520.5 78.1z"/>
+-    </g>
+-</svg>
+Index: src/serviceWorker.js
+===================================================================
+--- src/serviceWorker.js	(date 1559171228000)
++++ src/serviceWorker.js	(date 1559171228000)
+@@ -1,135 +0,0 @@
+-// This optional code is used to register a service worker.
+-// register() is not called by default.
+-
+-// This lets the app load faster on subsequent visits in production, and gives
+-// it offline capabilities. However, it also means that developers (and users)
+-// will only see deployed updates on subsequent visits to a page, after all the
+-// existing tabs open on the page have been closed, since previously cached
+-// resources are updated in the background.
+-
+-// To learn more about the benefits of this model and instructions on how to
+-// opt-in, read https://bit.ly/CRA-PWA
+-
+-const isLocalhost = Boolean(
+-  window.location.hostname === 'localhost' ||
+-    // [::1] is the IPv6 localhost address.
+-    window.location.hostname === '[::1]' ||
+-    // 127.0.0.1/8 is considered localhost for IPv4.
+-    window.location.hostname.match(
+-      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+-    )
+-);
+-
+-export function register(config) {
+-  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+-    // The URL constructor is available in all browsers that support SW.
+-    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
+-    if (publicUrl.origin !== window.location.origin) {
+-      // Our service worker won't work if PUBLIC_URL is on a different origin
+-      // from what our page is served on. This might happen if a CDN is used to
+-      // serve assets; see https://github.com/facebook/create-react-app/issues/2374
+-      return;
+-    }
+-
+-    window.addEventListener('load', () => {
+-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+-
+-      if (isLocalhost) {
+-        // This is running on localhost. Let's check if a service worker still exists or not.
+-        checkValidServiceWorker(swUrl, config);
+-
+-        // Add some additional logging to localhost, pointing developers to the
+-        // service worker/PWA documentation.
+-        navigator.serviceWorker.ready.then(() => {
+-          console.log(
+-            'This web app is being served cache-first by a service ' +
+-              'worker. To learn more, visit https://bit.ly/CRA-PWA'
+-          );
+-        });
+-      } else {
+-        // Is not localhost. Just register service worker
+-        registerValidSW(swUrl, config);
+-      }
+-    });
+-  }
+-}
+-
+-function registerValidSW(swUrl, config) {
+-  navigator.serviceWorker
+-    .register(swUrl)
+-    .then(registration => {
+-      registration.onupdatefound = () => {
+-        const installingWorker = registration.installing;
+-        if (installingWorker == null) {
+-          return;
+-        }
+-        installingWorker.onstatechange = () => {
+-          if (installingWorker.state === 'installed') {
+-            if (navigator.serviceWorker.controller) {
+-              // At this point, the updated precached content has been fetched,
+-              // but the previous service worker will still serve the older
+-              // content until all client tabs are closed.
+-              console.log(
+-                'New content is available and will be used when all ' +
+-                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+-              );
+-
+-              // Execute callback
+-              if (config && config.onUpdate) {
+-                config.onUpdate(registration);
+-              }
+-            } else {
+-              // At this point, everything has been precached.
+-              // It's the perfect time to display a
+-              // "Content is cached for offline use." message.
+-              console.log('Content is cached for offline use.');
+-
+-              // Execute callback
+-              if (config && config.onSuccess) {
+-                config.onSuccess(registration);
+-              }
+-            }
+-          }
+-        };
+-      };
+-    })
+-    .catch(error => {
+-      console.error('Error during service worker registration:', error);
+-    });
+-}
+-
+-function checkValidServiceWorker(swUrl, config) {
+-  // Check if the service worker can be found. If it can't reload the page.
+-  fetch(swUrl)
+-    .then(response => {
+-      // Ensure service worker exists, and that we really are getting a JS file.
+-      const contentType = response.headers.get('content-type');
+-      if (
+-        response.status === 404 ||
+-        (contentType != null && contentType.indexOf('javascript') === -1)
+-      ) {
+-        // No service worker found. Probably a different app. Reload the page.
+-        navigator.serviceWorker.ready.then(registration => {
+-          registration.unregister().then(() => {
+-            window.location.reload();
+-          });
+-        });
+-      } else {
+-        // Service worker found. Proceed as normal.
+-        registerValidSW(swUrl, config);
+-      }
+-    })
+-    .catch(() => {
+-      console.log(
+-        'No internet connection found. App is running in offline mode.'
+-      );
+-    });
+-}
+-
+-export function unregister() {
+-  if ('serviceWorker' in navigator) {
+-    navigator.serviceWorker.ready.then(registration => {
+-      registration.unregister();
+-    });
+-  }
+-}
+Index: yarn.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- yarn.lock	(date 1559171228000)
++++ yarn.lock	(date 1561788226000)
+@@ -852,7 +852,7 @@
+   dependencies:
+     regenerator-runtime "^0.13.2"
+ 
+-"@babel/runtime@^7.0.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2":
++"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2":
+   version "7.4.5"
+   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
+   integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
+@@ -1717,7 +1717,7 @@
+   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
+   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
+ 
+-asap@~2.0.6:
++asap@~2.0.3, asap@~2.0.6:
+   version "2.0.6"
+   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
+@@ -1813,6 +1813,14 @@
+   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
+   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
+ 
++axios@^0.19.0:
++  version "0.19.0"
++  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
++  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
++  dependencies:
++    follow-redirects "1.5.10"
++    is-buffer "^2.0.2"
++
+ axobject-query@^2.0.2:
+   version "2.0.2"
+   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.0.2.tgz#ea187abe5b9002b377f925d8bf7d1c561adf38f9"
+@@ -2709,6 +2717,11 @@
+   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.0.1.tgz#1343182634298f7f38622f95e73f54e48ddf4738"
+   integrity sha512-sco40rF+2KlE0ROMvydjkrVMMG1vYilP2ALoRXcYR4obqbYIuV3Bg+51GEDW+HF8n7NRA+iaA4qD0nD9lo9mew==
+ 
++core-js@^1.0.0:
++  version "1.2.7"
++  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
++  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
++
+ core-js@^2.4.0:
+   version "2.6.9"
+   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
+@@ -2770,6 +2783,14 @@
+     safe-buffer "^5.0.1"
+     sha.js "^2.4.8"
+ 
++create-react-context@^0.2.2:
++  version "0.2.3"
++  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.3.tgz#9ec140a6914a22ef04b8b09b7771de89567cb6f3"
++  integrity sha512-CQBmD0+QGgTaxDL3OX1IDXYqjkp2It4RIbcb99jS6AEg27Ga+a9G3JtK6SIu0HBwPLZlmwt9F7UwWA4Bn92Rag==
++  dependencies:
++    fbjs "^0.8.0"
++    gud "^1.0.0"
++
+ cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
+   version "6.0.5"
+   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
+@@ -3046,6 +3067,13 @@
+   dependencies:
+     ms "2.0.0"
+ 
++debug@=3.1.0:
++  version "3.1.0"
++  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
++  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
++  dependencies:
++    ms "2.0.0"
++
+ debug@^3.2.5, debug@^3.2.6:
+   version "3.2.6"
+   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
+@@ -3389,6 +3417,13 @@
+   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
+ 
++encoding@^0.1.11:
++  version "0.1.12"
++  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
++  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
++  dependencies:
++    iconv-lite "~0.4.13"
++
+ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
+   version "1.4.1"
+   resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
+@@ -3882,6 +3917,19 @@
+   dependencies:
+     bser "^2.0.0"
+ 
++fbjs@^0.8.0:
++  version "0.8.17"
++  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
++  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
++  dependencies:
++    core-js "^1.0.0"
++    isomorphic-fetch "^2.1.1"
++    loose-envify "^1.0.0"
++    object-assign "^4.1.0"
++    promise "^7.1.1"
++    setimmediate "^1.0.5"
++    ua-parser-js "^0.7.18"
++
+ figgy-pudding@^3.5.1:
+   version "3.5.1"
+   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
+@@ -4004,6 +4052,13 @@
+     inherits "^2.0.3"
+     readable-stream "^2.3.6"
+ 
++follow-redirects@1.5.10:
++  version "1.5.10"
++  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
++  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
++  dependencies:
++    debug "=3.1.0"
++
+ follow-redirects@^1.0.0:
+   version "1.7.0"
+   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
+@@ -4274,6 +4329,11 @@
+   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
+   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
+ 
++gud@^1.0.0:
++  version "1.0.0"
++  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
++  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
++
+ gzip-size@5.0.0:
+   version "5.0.0"
+   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-5.0.0.tgz#a55ecd99222f4c48fd8c01c625ce3b349d0a0e80"
+@@ -4428,6 +4488,18 @@
+   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
+   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+ 
++history@^4.9.0:
++  version "4.9.0"
++  resolved "https://registry.yarnpkg.com/history/-/history-4.9.0.tgz#84587c2068039ead8af769e9d6a6860a14fa1bca"
++  integrity sha512-H2DkjCjXf0Op9OAr6nJ56fcRkTSNrUiv41vNJ6IswJjif6wlpZK0BTfFbi7qK9dXLSYZxkq5lBsj3vUjlYBYZA==
++  dependencies:
++    "@babel/runtime" "^7.1.2"
++    loose-envify "^1.2.0"
++    resolve-pathname "^2.2.0"
++    tiny-invariant "^1.0.2"
++    tiny-warning "^1.0.0"
++    value-equal "^0.4.0"
++
+ hmac-drbg@^1.0.0:
+   version "1.0.1"
+   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
+@@ -4437,6 +4509,13 @@
+     minimalistic-assert "^1.0.0"
+     minimalistic-crypto-utils "^1.0.1"
+ 
++hoist-non-react-statics@^3.1.0:
++  version "3.3.0"
++  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
++  integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
++  dependencies:
++    react-is "^16.7.0"
++
+ hosted-git-info@^2.1.4:
+   version "2.7.1"
+   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
+@@ -4580,7 +4659,7 @@
+   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+ 
+-iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
++iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
+   version "0.4.24"
+   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+@@ -4828,7 +4907,7 @@
+   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+ 
+-is-buffer@^2.0.0:
++is-buffer@^2.0.0, is-buffer@^2.0.2:
+   version "2.0.3"
+   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.3.tgz#4ecf3fcf749cbd1e472689e109ac66261a25e725"
+   integrity sha512-U15Q7MXTuZlrbymiz95PJpZxu8IlipAp4dtS3wOdgPXx3mqBnslrWU14kxfHB+Py/+2PVKSr37dMAgM2A4uArw==
+@@ -5017,7 +5096,12 @@
+   resolved "https://registry.yarnpkg.com/is-root/-/is-root-2.0.0.tgz#838d1e82318144e5a6f77819d90207645acc7019"
+   integrity sha512-F/pJIk8QD6OX5DNhRB7hWamLsUilmkDGho48KbgZ6xg/lmAZXHxzXQ91jzB3yRSw5kdQGGGc4yz8HYhTYIMWPg==
+ 
+-is-stream@^1.1.0:
++is-root@^2.1.0:
++  version "2.1.0"
++  resolved "https://registry.yarnpkg.com/is-root/-/is-root-2.1.0.tgz#809e18129cf1129644302a4f8544035d51984a9c"
++  integrity sha512-AGOriNp96vNBd3HtU+RzFEc75FfR5ymiYv8E553I71SCeXBiMsVDUtdio1OEFvrPyLIQ9tVR5RxXIFe5PUFjMg==
++
++is-stream@^1.0.1, is-stream@^1.1.0:
+   version "1.1.0"
+   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+@@ -5051,6 +5135,11 @@
+   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
+   integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
+ 
++isarray@0.0.1:
++  version "0.0.1"
++  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
++  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
++
+ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
+   version "1.0.0"
+   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
+@@ -5073,6 +5162,14 @@
+   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+ 
++isomorphic-fetch@^2.1.1:
++  version "2.2.1"
++  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
++  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
++  dependencies:
++    node-fetch "^1.0.1"
++    whatwg-fetch ">=0.10.0"
++
+ isstream@~0.1.2:
+   version "0.1.2"
+   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
+@@ -5886,7 +5983,7 @@
+   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
+   integrity sha1-4PyVEztu8nbNyIh82vJKpvFW+Po=
+ 
+-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
++loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+   version "1.4.0"
+   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+@@ -6268,6 +6365,14 @@
+   dependencies:
+     lower-case "^1.1.1"
+ 
++node-fetch@^1.0.1:
++  version "1.7.3"
++  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
++  integrity sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
++  dependencies:
++    encoding "^0.1.11"
++    is-stream "^1.0.1"
++
+ node-forge@0.7.5:
+   version "0.7.5"
+   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
+@@ -6823,6 +6928,13 @@
+   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
+   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+ 
++path-to-regexp@^1.7.0:
++  version "1.7.0"
++  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
++  integrity sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
++  dependencies:
++    isarray "0.0.1"
++
+ path-type@^2.0.0:
+   version "2.0.0"
+   resolved "https://registry.yarnpkg.com/path-type/-/path-type-2.0.0.tgz#f012ccb8415b7096fc2daa1054c3d72389594c73"
+@@ -7647,6 +7759,13 @@
+   dependencies:
+     asap "~2.0.6"
+ 
++promise@^7.1.1:
++  version "7.3.1"
++  resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
++  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
++  dependencies:
++    asap "~2.0.3"
++
+ prompts@^2.0.1:
+   version "2.1.0"
+   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.1.0.tgz#bf90bc71f6065d255ea2bdc0fe6520485c1b45db"
+@@ -7861,7 +7980,7 @@
+     strip-ansi "5.2.0"
+     text-table "0.2.0"
+ 
+-react-dom@16.8.6:
++react-dom@^16.8.6:
+   version "16.8.6"
+   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
+   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
+@@ -7876,11 +7995,40 @@
+   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
+   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
+ 
+-react-is@^16.8.1, react-is@^16.8.4:
++react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
+   version "16.8.6"
+   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
+   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+ 
++react-router-dom@^5.0.0:
++  version "5.0.0"
++  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.0.0.tgz#542a9b86af269a37f0b87218c4c25ea8dcf0c073"
++  integrity sha512-wSpja5g9kh5dIteZT3tUoggjnsa+TPFHSMrpHXMpFsaHhQkm/JNVGh2jiF9Dkh4+duj4MKCkwO6H08u6inZYgQ==
++  dependencies:
++    "@babel/runtime" "^7.1.2"
++    history "^4.9.0"
++    loose-envify "^1.3.1"
++    prop-types "^15.6.2"
++    react-router "5.0.0"
++    tiny-invariant "^1.0.2"
++    tiny-warning "^1.0.0"
++
++react-router@5.0.0:
++  version "5.0.0"
++  resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.0.0.tgz#349863f769ffc2fa10ee7331a4296e86bc12879d"
++  integrity sha512-6EQDakGdLG/it2x9EaCt9ZpEEPxnd0OCLBHQ1AcITAAx7nCnyvnzf76jKWG1s2/oJ7SSviUgfWHofdYljFexsA==
++  dependencies:
++    "@babel/runtime" "^7.1.2"
++    create-react-context "^0.2.2"
++    history "^4.9.0"
++    hoist-non-react-statics "^3.1.0"
++    loose-envify "^1.3.1"
++    path-to-regexp "^1.7.0"
++    prop-types "^15.6.2"
++    react-is "^16.6.0"
++    tiny-invariant "^1.0.2"
++    tiny-warning "^1.0.0"
++
+ react-scripts@3.0.1:
+   version "3.0.1"
+   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.0.1.tgz#e5565350d8069cc9966b5998d3fe3befe3d243ac"
+@@ -7941,7 +8089,7 @@
+   optionalDependencies:
+     fsevents "2.0.6"
+ 
+-react@16.8.6:
++react@^16.8.6:
+   version "16.8.6"
+   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
+   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
+@@ -8235,6 +8383,11 @@
+   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
+   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+ 
++resolve-pathname@^2.2.0:
++  version "2.2.0"
++  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
++  integrity sha512-bAFz9ld18RzJfddgrO2e/0S2O81710++chRMUxHjXOYKF6jTAMrUNZrEZ1PvV0zlhfjidm08iRPdTLPno1FuRg==
++
+ resolve-url@^0.2.1:
+   version "0.2.1"
+   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
+@@ -8500,7 +8653,7 @@
+     is-plain-object "^2.0.3"
+     split-string "^3.0.1"
+ 
+-setimmediate@^1.0.4:
++setimmediate@^1.0.4, setimmediate@^1.0.5:
+   version "1.0.5"
+   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
+   integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
+@@ -9130,6 +9283,16 @@
+   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
+   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+ 
++tiny-invariant@^1.0.2:
++  version "1.0.4"
++  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.0.4.tgz#346b5415fd93cb696b0c4e8a96697ff590f92463"
++  integrity sha512-lMhRd/djQJ3MoaHEBrw8e2/uM4rs9YMNk0iOr8rHQ0QdbM7D4l0gFl3szKdeixrlyfm9Zqi4dxHCM2qVG8ND5g==
++
++tiny-warning@^1.0.0:
++  version "1.0.2"
++  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.2.tgz#1dfae771ee1a04396bdfde27a3adcebc6b648b28"
++  integrity sha512-rru86D9CpQRLvsFG5XFdy0KdLAvjdQDyZCsRcuu60WtzFylDM3eAWSxEVz5kzL2Gp544XiUvPbVKtOA/txLi9Q==
++
+ tmp@^0.0.33:
+   version "0.0.33"
+   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
+@@ -9269,6 +9432,11 @@
+   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+ 
++ua-parser-js@^0.7.18:
++  version "0.7.19"
++  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
++  integrity sha512-T3PVJ6uz8i0HzPxOF9SWzWAlfN/DavlpQqepn22xgve/5QecC+XMCAtmUNnY7C9StehaV6exjUCI801lOI7QlQ==
++
+ uglify-js@3.4.x:
+   version "3.4.10"
+   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.10.tgz#9ad9563d8eb3acdfb8d38597d2af1d815f6a755f"
+@@ -9493,6 +9661,11 @@
+     spdx-correct "^3.0.0"
+     spdx-expression-parse "^3.0.0"
+ 
++value-equal@^0.4.0:
++  version "0.4.0"
++  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
++  integrity sha512-x+cYdNnaA3CxvMaTX0INdTCN8m8aF2uY9BvEqmxuYp8bL09cs/kWVQPVGcA35fMktdOsP69IgU7wFj/61dJHEw==
++
+ vary@~1.1.2:
+   version "1.1.2"
+   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+@@ -9725,7 +9898,7 @@
+   dependencies:
+     iconv-lite "0.4.24"
+ 
+-whatwg-fetch@3.0.0:
++whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
+   version "3.0.0"
+   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
+   integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
+diff --git public/favicon.ico public/favicon.ico
+deleted file mode 100644
+index a11777cc471a4344702741ab1c8a588998b1311a..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
