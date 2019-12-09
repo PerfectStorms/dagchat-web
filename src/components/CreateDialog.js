@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
-
+import url from "./../url";
 
 class CreateDialog extends Component {
 
@@ -11,13 +11,13 @@ class CreateDialog extends Component {
 
     //console.log(user + " " + pass + " " + pass2);
 
-    axios.get(`http://127.0.0.1:8080/chats/${chat}`).then((res) => {
+    axios.get(url.url + `/chats/${chat}`).then((res) => {
       //console.log(res.data);
 
       if (chat !== '') {
         if (res.data.name !== chat) {
 
-          axios.post('http://127.0.0.1:8080/chats', {
+          axios.post(url.url + '/chats', {
             name: chat,
             secret: secret
           })

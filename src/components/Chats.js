@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import axios from "axios";
 import Chat from "./objects/Chat";
 import {NavLink} from "react-router-dom";
+import url from "./../url";
 
 
 class Chats extends Component {
@@ -18,7 +19,7 @@ class Chats extends Component {
     // });
 
 
-    fetch('http://127.0.0.1:8080/chats')
+    fetch(url.url  + '/chats')
       .then(response => {
         return response.json();
       }).then(result => {

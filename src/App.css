@@ -3,7 +3,8 @@
     padding: 0;
 }
 html {
-    background-color: #ffffff;
+    /*background: url(https://i1.wp.com/www.dangerrangerbear.com/wp-content/uploads/2017/06/CatalinaIslandWest.jpg);*/
+    /*background-size: 100%;*/
 }
 body {
     font-size: 16px;
@@ -278,8 +279,8 @@ a:hover {
     width: 100%;
 }
 .messages .message .text {
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 2px 20px;
+    margin: 0;
     font-size: 14px;
     /*background: #eee;*/
     width: fit-content;

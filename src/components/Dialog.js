@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Message from "./objects/Message";
+import url from "./../url";
 
 
 class Dialog extends Component {
@@ -15,12 +16,12 @@ class Dialog extends Component {
     };
     this.getMessages();
   }
-
+f
   getMessages() {
     let chat_name = window.location.pathname.split("/").pop();
 
 
-    axios.get(`http://127.0.0.1:8080/messages/${chat_name}`)
+    axios.get(url.url + `/messages/${chat_name}`)
       .then(response => {
         this.setState({
           name: this.props.match.params.name
@@ -50,11 +51,13 @@ class Dialog extends Component {
     // const min = new Date().getMinutes(); //Current Minutes
     // const sec = new Date().getSeconds(); //Current Seconds
 
-    axios.post('http://127.0.0.1:8080/messages', {
+    let time = new Date().getHours() + ":" + new Date().getMinutes();
+
+    axios.post(url.url + '/messages', {
       username: 'anonymous',
       message: text,
       chat: window.location.pathname.split("/").pop(),
-      times: null
+      times: time.toString()
     }).then(function (response) {
       console.log(response);
     }).catch(function (error) {

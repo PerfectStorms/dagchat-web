@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
 import axios from "axios";
-
+import url from "./../url";
 
 class Home extends Component {
 
@@ -16,7 +16,7 @@ class Home extends Component {
     const chat = document.getElementById('finder').value;
     //console.log(user + " " + pass);
 
-    axios.get(`http://127.0.0.1:8080/chats/${chat}`).then((res) => {
+    axios.get(url.url + `/chats/${chat}`).then((res) => {
       console.log(res.data);
 
       if (res.data.name === chat) {
